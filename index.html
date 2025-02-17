@@ -29,6 +29,36 @@
 </head>
 
 
+<iframe 
+        id="musicPlayer"
+        allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" 
+        frameborder="0" 
+        height="175" 
+        style="width:100vw; max-width:100%; border: none; margin: 0; padding: 0; border-radius: 10px;" 
+        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation">
+    </iframe>
+
+    <script>
+        // List of Apple Music song URLs
+        const songs = [
+            "https://embed.music.apple.com/in/album/baby-im-back/1761439277?i=1761439496&theme=light",
+            "https://embed.music.apple.com/in/album/nights-like-this/1715047367?i=1715047378",
+            "https://embed.music.apple.com/in/album/jd-the-alcoholic-background-score/1552701999?i=1552702023"
+        ];
+
+        // Select a random song
+        const randomSong = songs[Math.floor(Math.random() * songs.length)];
+
+        // Set the iframe source after the page loads
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("musicPlayer").src = randomSong;
+        });
+    </script>
+
+   
+
+
+
 <body id="top">
 
     
