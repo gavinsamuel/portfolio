@@ -4654,3 +4654,30 @@ td:last-child {
 .contact-list li {
 	padding-left: 0;
 }
+
+iframe {
+    background-color: #000 !important; /* Change to your page background */
+}
+.apple-music-embed {
+    width: 200vw;
+    max-width: 100%;
+    height: 175px;
+    overflow: hidden; /* Hides the scrubber */
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+.apple-music-embed iframe {
+    border: none !important;
+    margin: 0;
+    padding: 0;
+    display: block;
+    transform: scale(1.15); /* Zooms in to remove white scrubber */
+    clip-path: inset(10px 0px 0px 0px); /* Crops the top 10px */
+    background: transparent !important;
+}
+
+
