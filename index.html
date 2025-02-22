@@ -29,22 +29,30 @@
 </head>
 
 
-<iframe 
+<div style="width: 200vw; max-width: 100%; overflow: hidden; border-radius: 0;">
+    <iframe 
         id="musicPlayer"
         allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" 
         frameborder="0" 
         height="175" 
-        style="width:100vw; max-width:100%; border: none; margin: 0; padding: 0; border-radius: 10px;" 
+        style="width: 100%; height: 100%;" 
         sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation">
     </iframe>
+</div>
+
+
 
     <script>
         // List of Apple Music song URLs
         const songs = [
-            "https://embed.music.apple.com/in/album/baby-im-back/1761439277?i=1761439496&theme=light",
-            "https://embed.music.apple.com/in/album/nights-like-this/1715047367?i=1715047378",
-            "https://embed.music.apple.com/in/album/jd-the-alcoholic-background-score/1552701999?i=1552702023"
-        ];
+            "https://embed.music.apple.com/in/album/baby-im-back/1761439277?i=1761439496&theme=dark",
+            "https://embed.music.apple.com/in/album/nights-like-this/1715047367?i=1715047378&theme=dark",
+            "https://embed.music.apple.com/in/album/jd-the-alcoholic-background-score/1552701999?i=1552702023&theme=dark",
+            "https://embed.music.apple.com/in/album/here/1440845616?i=1440845747&theme=dark",
+            "https://embed.music.apple.com/in/album/neon-guts-feat-pharrell-williams/1274150514?i=1274152818&theme=dark",
+            "https://embed.music.apple.com/in/album/trampoline/1480896910?i=1480896915&theme=dark",
+            "https://embed.music.apple.com/in/album/butterfly-effect/1421241217?i=1421243623&theme=dark"
+         ];
 
         // Select a random song
         const randomSong = songs[Math.floor(Math.random() * songs.length)];
